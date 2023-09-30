@@ -1,6 +1,11 @@
+using Api_test.Persistence;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<NotebookContext>(options =>
+options.UseSqlServer(builder.Configuration.GetConnectionString("Conexao")));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

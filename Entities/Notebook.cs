@@ -7,7 +7,7 @@ namespace Api_test.Entities
 {
     public class Notebook
     {
-        public Notebook(string marca, string modelo, int ano, decimal preco)
+        public Notebook(string marca, string modelo, int ano, double preco)
         {
             Marca = marca;
             Modelo = modelo;
@@ -18,6 +18,6 @@ namespace Api_test.Entities
         public string Marca { get; private set; }
         public string Modelo { get; private set; }
         public int Ano { get; private set; }
-        public decimal Preco { get; private set; }
+        public double Preco { get; private set; }
     }
 }

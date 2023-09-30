@@ -9,7 +9,7 @@ namespace Api_test.Models
         string Marca,
         string Modelo,
         int Ano,
-        decimal Preco
+        double Preco
     )
     {
         
