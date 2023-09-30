@@ -5,7 +5,12 @@ using System.Threading.Tasks;
 
 namespace Api_test.Models
 {
-    public class UpdateNotebook
+    public record UpdateNotebook(
+        string Marca,
+        string Modelo,
+        int Ano,
+        decimal Preco
+    )
     {
         
     }
