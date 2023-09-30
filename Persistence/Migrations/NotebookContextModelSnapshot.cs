@@ -38,8 +38,8 @@ namespace Api_test.Migrations
                     b.Property<string>("Modelo")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("Preco")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<double>("Preco")
+                        .HasColumnType("float");
 
                     b.HasKey("Id");
 

@@ -19,7 +19,7 @@ namespace Api_test.Migrations
                     Marca = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Modelo = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Ano = table.Column<int>(type: "int", nullable: false),
-                    Preco = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
+                    Preco = table.Column<decimal>(type: "double", nullable: false)
                 },
                 constraints: table =>
                 {

@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Api_test.Migrations
 {
     [DbContext(typeof(NotebookContext))]
-    [Migration("20230930230303_CriacaoTabela")]
-    partial class CriacaoTabela
+    [Migration("20230930232329_AttColunas")]
+    partial class AttColunas
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -41,8 +41,8 @@ namespace Api_test.Migrations
                     b.Property<string>("Modelo")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("Preco")
-                        .HasColumnType("double");
+                    b.Property<double>("Preco")
+                        .HasColumnType("float");
 
                     b.HasKey("Id");
 

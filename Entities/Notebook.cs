@@ -19,5 +19,12 @@ namespace Api_test.Entities
         public string Modelo { get; private set; }
         public int Ano { get; private set; }
         public double Preco { get; private set; }
+
+        public void Update(string marca, string modelo, int ano, double preco){
+            Marca = marca;
+            Modelo = modelo;
+            Ano = ano;
+            Preco = preco;
+        }
     }
 }
