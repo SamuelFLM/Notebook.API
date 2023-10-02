@@ -4,7 +4,7 @@
 #**.NET - API REST e Entity Framework**
 
 ##Desafio de projeto
-Aplicação responsavel por gerenciar notebooks
+Aplicação responsavel por gerenciar notebooks.
 
 Contém as seguintes funcionalidades:
 
